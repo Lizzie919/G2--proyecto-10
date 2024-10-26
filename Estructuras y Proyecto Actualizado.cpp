@@ -34,22 +34,22 @@ int main() {
     int opcion;
 
     do {
-        // Menú de opciones
-        cout << "1. Ingresar la información del estudiante" << endl;
-        cout << "2. Ingresar la información de los cursos" << endl;
-        cout << "3. Visualizar toda la información" << endl;
+        // MenÃº de opciones
+        cout << "1. Ingresar la informaciÃ³n del estudiante" << endl;
+        cout << "2. Ingresar la informaciÃ³n de los cursos" << endl;
+        cout << "3. Visualizar toda la informaciÃ³n" << endl;
         cout << "4. Asignar una nota a un curso" << endl;
         cout << "5. Calcular el promedio del estudiante" << endl;
-        cout << "6. Indicar si el estudiante está en prueba académica" << endl;
+        cout << "6. Indicar si el estudiante estÃ¡ en prueba acadÃ©mica" << endl;
         cout << "7. Indicar si el estudiante es candidato a beca" << endl;
         cout << "8. Salir del programa" << endl;
-        cout << "Seleccione una opción: ";
+        cout << "Seleccione una opciÃ³n: ";
         cin >> opcion;
 
         switch (opcion) {
             case 1:
                 // Ingresar datos del estudiante
-                cout << "Ingrese el código del estudiante: ";
+                cout << "Ingrese el cÃ³digo del estudiante: ";
                 cin >> codigoEstudiante;
                 cout << "Ingrese el nombre del estudiante: ";
                 cin >> nombreEstudiante;
@@ -58,15 +58,15 @@ int main() {
                 break;
 
             case 2:
-                // Ingresar la información de los cursos
+                // Ingresar la informaciÃ³n de los cursos
                 for (int i = 0; i < 4; i++) {
-                    cout << "Ingrese el código del curso " << i + 1 << ": ";
+                    cout << "Ingrese el cÃ³digo del curso " << i + 1 << ": ";
                     cin >> codigoCurso[i];
                     cout << "Ingrese el nombre del curso " << i + 1 << ": ";
                     cin >> nombreCurso[i];
                     cout << "Ingrese el departamento del curso " << i + 1 << ": ";
                     cin >> departamentoCurso[i];
-                    cout << "Ingrese los créditos del curso " << i + 1 << ": ";
+                    cout << "Ingrese los crÃ©ditos del curso " << i + 1 << ": ";
                     cin >> creditosCurso[i];
                     cout << "Ingrese la nota del curso " << i + 1 << ": ";
                     cin >> notaCurso[i];
@@ -74,14 +74,14 @@ int main() {
                 break;
 
             case 3:
-                // Mostrar información completa del estudiante y cursos
+                // Mostrar informaciÃ³n completa del estudiante y cursos
                 cout << "\nEstudiante: " << nombreEstudiante << " " << apellidoEstudiante << endl;
-                cout << "Código: " << codigoEstudiante << endl;
+                cout << "CÃ³digo: " << codigoEstudiante << endl;
                 cout << "Promedio: " << promedioEstudiante << endl;
 
                 for (int i = 0; i < 4; i++) {
-                    cout << "\nCurso " << i + 1 << ": " << nombreCurso[i] << " (Código: " << codigoCurso[i] << ")" << endl;
-                    cout << "  Créditos: " << creditosCurso[i] << endl;
+                    cout << "\nCurso " << i + 1 << ": " << nombreCurso[i] << " (CÃ³digo: " << codigoCurso[i] << ")" << endl;
+                    cout << "  CrÃ©ditos: " << creditosCurso[i] << endl;
                     cout << "  Departamento: " << departamentoCurso[i] << endl;
                     cout << "  Nota: " << notaCurso[i] << endl;
                 }
